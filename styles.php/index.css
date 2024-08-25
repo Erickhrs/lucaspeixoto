@@ -1,0 +1,57 @@
+body{
+    background-color: var(--background);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 50px;
+}
+#options{
+    display: flex;
+    gap: 30px;
+    padding-top: 25px;
+}
+
+#options .active{
+    border-bottom: 1px solid black;
+    height: fit-content;
+    padding-bottom: 5px;
+}
+#social{
+    font-size: 20px;
+    padding-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.projects_container {
+    column-count: 4; /* Mantém quatro colunas */
+    column-gap: 20px; /* Espaçamento entre as colunas */
+    padding: 55px;
+    max-width: 10000px;
+    margin: 0 auto;
+}
+
+.project {
+    break-inside: avoid; /* Evita que os elementos quebrem no meio */
+    margin-bottom: 20px; /* Espaçamento entre os itens na mesma coluna */
+}
+
+.projects_container img {
+    width: 100%; /* Garante que as imagens ocupem toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+.project_title{
+    margin: 0;
+    padding-top: 5px;
+}
+
+footer{
+    text-align: center;
+    font-size: 30px;
+    padding: 100px;
+}

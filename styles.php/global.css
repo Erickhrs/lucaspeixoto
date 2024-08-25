@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+:root {
+    --background: hsla(0,0%,96.86%,1);
+}
+
+h1, a, p{
+    font-family: "Nunito Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Animação de fade-in e movimento para cima */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica a animação a todos os elementos do body */
+body * {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Delay na animação para cada elemento */
+body *:nth-child(1) {
+    animation-delay: 0.1s;
+}
+body *:nth-child(2) {
+    animation-delay: 0.2s;
+}
+body *:nth-child(3) {
+    animation-delay: 0.3s;
+}
+/* Continue aumentando o delay para quantos elementos você tiver */
